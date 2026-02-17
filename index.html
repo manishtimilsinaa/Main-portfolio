@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Manish portfolio showcasing creative design and front-end development skills. Explore projects, resume, and contact information.">
+    <title>Portfolio</title>
+    <link rel="icon" href="assets/images/site-icon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="ripple"></div>
+    </div>
+    <div class="main-container" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="0" data-bs-smooth-scroll="true">
+        <nav class="header position-fixed w-100" id="navbar">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <a href="index.html" class="logo">MT</a>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-flex">
+                        <ul class="p-0 m-0 mx-auto d-flex align-items-center navigation" id="main-nav">
+                            <li>
+                                <a href="#home" target="_blank" class="nav-link active"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#about" target="_blank" class="nav-link"><span>About</span></a>
+                            </li>
+                            <li>
+                                <a href="#services" target="_blank" class="nav-link"><span>Services</span></a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" target="_blank" class="nav-link"><span>Portfolio</span></a>
+                            </li>
+                            <li>
+                                <a href="#testimonials" target="_blank" class="nav-link"><span>Clients</span></a>
+                            </li>
+                            <li>
+                                <a href="#contact" target="_blank" class="nav-link"><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex">
+                        <div class="hire-btn-wrapper d-flex align-items-center justify-content-end w-100">
+                            <a href="#contact" class="secondary-btn hire-btn d-block">Hire me</a>
+                        </div>
+                    </div>
+                    <div class=" col-6 d-flex d-lg-none">
+                        <div class=" d-flex align-items-center justify-content-end w-100 toggler-btn">
+                            <div class="bar-icon d-flex flex-column gap-2" data-bs-toggle="offcanvas" href="#offCanvas"
+                                role="button" aria-controls="offCanvas">
+                                <span class="w-100"></span>
+                                <span class="w-100"></span>
+                                <span class="w-100"></span>
+                            </div>
+                        </div>
+
+                        <div class="offcanvas offcanvas-start hidden-nav" tabindex="-1" id="offCanvas"
+                            aria-labelledby="offCanvasLabel">
+                            <div class="offcanvas-header">
+                                <div class="hidden-nav-logo">
+                                    <a href="index.html" class="logo">MT</a>
+                                </div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="offcanvas-contents">
+                                    <ul class="d-flex flex-column p-0">
+                                        <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                href="#home">Home</a></li>
+                                        <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                href="#about">About</a></li>
+                                        <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                href="#services">Services</a></li>
+                                        <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                href="#portfolio">Portfolio</a></li>
+                                                <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                    href="#testimonials">Clients</a></li>
+                                        <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
+                                                href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="hero-section position-relative d-flex align-items-center" id="home">
+            <div class="hero-overlay position-absolute top-0 left-0 w-100 h-100"></div>
+            <div class="custom-container">
+                <div class="hero-text position-relative">
+                    <h1 class="text-center text-lg-start">Hi, I am Manish</h1>
+                    <p class="text-center text-lg-start"> I bring creativity and technical skill to <br>
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </p>
+                    <div class="hero-social d-flex justify-content-center justify-content-lg-start">
+                        <a href="https://www.facebook.com/profile.php?id=100013751371780"
+                            class="d-flex align-items-center justify-content-center position-relative"><span class="position-absolute top-50 start-50"><i class="bi bi-facebook"></i></span></a>
+                            <a href="https://wa.me/+9779840590906" target="_blank"
+                            class="d-flex align-items-center justify-content-center position-relative"><span class="position-absolute top-50 start-50"><i class="bi bi-twitter"></i></span></a>
+                        <a href="https://wa.me/+9779840590906" target="_blank"
+                            class="d-flex align-items-center justify-content-center position-relative"><span class="position-absolute top-50 start-50"><i class="bi bi-whatsapp"></i></span></a>
+                        <a href="https://www.linkedin.com/in/Manish-Timilsina-2b9865258/"
+                            class="d-flex align-items-center justify-content-center position-relative"><span class="position-absolute top-50 start-50"><i class="bi bi-linkedin"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="about section-pad" id="about">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-content-wrapper d-flex flex-column align-items-center align-items-lg-start">
+                            <div class="about-text text-center text-lg-start">
+                                <h2>ABOUT ME</h2>
+                                <span class="subtitle">QA</span>
+                                <p>I’m Manish, Enthusiastic QA Engineer with hands-on experience in manual and automation testing using Selenium with Java. Skilled in
+identifying bugs, writing test cases, and improving software quality through e ective collaboration. Pro cient in Java, HTML, CSS,
+JavaScript, with a strong foundation in backend and frontend development.
+                                </p>
+                            </div>
+                            <div class="about-content w-100">
+                                <div class="about-links d-flex justify-content-center justify-content-lg-start">
+                                    <ul class="m-0 p-0 d-flex">
+                                        <li class="about-link active" data-target="skill-content"><span>Skills</span></li>
+                                        <li class="about-link" data-target="education-content"><span>Education</span></li>
+                                        <li class="about-link" data-target="experience-content"><span>Experience</span></li>
+                                    </ul>
+                                </div>
+                                <div class="about-link-content d-flex justify-content-center justify-content-lg-start position-relative">
+                                    <div class="content skill-content w-100 active">
+                                        <div class="skill-1">
+                                            <div class="progress-bar-skill" data-percentage="80%">
+                                                <div class="progress-title-holder d-flex gap-3">
+                                                    <p>Automation(selenium)</p>
+                                                    <p class="hidden-num d-sm-none">[60%]</p>
+                                                    <span class="progress-number-wrapper d-none d-sm-block">
+                                                        <span class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="progress-content-outter">
+                                                    <div class="progress-content"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-1 py-4">
+                                            <div class="progress-bar-skill" data-percentage="85%">
+                                                <div class="progress-title-holder d-flex gap-3">
+                                                    <p>HTML/ CSS/Bootstrap</p>
+                                                    <p class="hidden-num d-sm-none">[85%]</p>
+                                                    <span class="progress-number-wrapper d-none d-sm-block">
+                                                        <span class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="progress-content-outter">
+                                                    <div class="progress-content"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-1">
+                                            <div class="progress-bar-skill" data-percentage="70%">
+                                                <div class="progress-title-holder d-flex gap-3">
+                                                    <p>JAVA</p>
+                                                    <p class="hidden-num d-sm-none">[70%]</p>
+                                                    <span class="progress-number-wrapper d-none d-sm-block">
+                                                        <span class="progress-number-mark">
+                                                            <span class="percent"></span>
+                                                            <span class="down-arrow"></span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="progress-content-outter">
+                                                    <div class="progress-content"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content education-content position-absolute">
+                                        <ul class="p-0 m-0 d-flex flex-column">
+                                            <li><strong>High School(+2)</strong> at Kathmandu Model College, Bagbazar</li>
+                                            <li><strong>Bachelor in BscCsit</strong> at Prime college,
+                                                Nayabazar</li>
+                                            <!-- <li><strong></strong> 
+                                                </li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="content experience-content position-absolute">
+                                        <ul class="p-0 m-0 d-flex flex-column">
+                                            <li><strong></strong> </li>
+                                            <li><strong>Quality Assurance</strong> at Treeleaf Technologies</li>
+                                            <li><strong>Software Quality Assurance </strong> at Miracle Interface, Kupandole present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="assets/images/Manish-Timilsina-QA-CV_3.pdf" target="_blank"
+                                class="primary-btn d-block cv-btn">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="about-img mx-auto mx-lg-start">
+                            <img src="assets/images/about-me.jpeg" alt="about-image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services section-pad" id="services">
+            <div class="custom-container">
+                <div class="head-text text-center">
+                    <h2>Services</h2>
+                    <span class="subtitle">What I can do for you</span>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-laptop"></i>
+                                <h3 class="my-3">Web Design</h3>
+                                <p>Craft visually stunning and user-friendly websites that captivate and engage visitors.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-diamond"></i>
+                                <h3 class="my-3">Creative Design</h3>
+                                <p>Bring your brand to life with innovative and unique design concepts that stand out.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-display"></i>
+                                <h3 class="my-3">Responsive Design</h3>
+                                <p>Ensure your website looks and functions perfectly on all devices, from desktops to
+                                    smartphones.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-terminal"></i>
+                                <h3 class="my-3">Web Development</h3>
+                                <p>Build robust and scalable web applications using the latest technologies and best practices.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-speedometer2"></i>
+                                <h3 class="my-3">Testing</h3>
+                                <p>Ensure your website is bug-free and performs well across all devices and browsers.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <a href="javascript:void(0)">
+                            <div class="service-card h-100 text-center text-sm-start">
+                                <i class="bi bi-lightning-fill"></i>
+                                <h3 class="my-3">Performance Optimization</h3>
+                                <p>Optimize performance to reduce loading times and enhance overall site functionality.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section-pad" id="portfolio">
+            <div class="custom-container">
+                <div class="head-text text-center">
+                    <h2>My Latest Work</h2>
+
+                    <p> Tested More than 10+ projects</p>
+                    <!-- <span class="subtitle">Collection of My Projects
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                            <figure class="service-thumb d-flex align-items-center justify-content-center">
+                                <img src="assets/images/coffee.png" alt="project-thumb">
+                            </figure>
+                            <div class="card-overlay position-absolute"></div>
+                            <div class="card-btn position-absolute">
+                                <a href="https://basnyatbrew.onrender.com/" class="primary-btn">Live Preview</a>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Basnyat Brew Coffee</h3>
+                        <span class="text-center d-block tools">(Bootstrap/SCSS)</span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                            <figure class="service-thumb d-flex align-items-center justify-content-center">
+                                <img src="assets/images/lifedream-adventure-logo.png" alt="project-thumb">
+                            </figure>
+                            <div class="card-overlay position-absolute"></div>
+                            <div class="card-btn position-absolute">
+                                <a href="https://lifedream.netlify.app/" class="primary-btn">Live Preview</a>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Life Dream Adventure</h3>
+                        <span class="text-center d-block tools">(Bootstrap/SCSS)</span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                            <figure class="service-thumb d-flex align-items-center justify-content-center">
+                                <img src="assets/images/densmi-logo.webp" alt="project-thumb">
+                            </figure>
+                            <div class="card-overlay position-absolute"></div>
+                            <div class="card-btn position-absolute">
+                                <a href="https://densmidental.netlify.app/" class="primary-btn">Live Preview</a>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Densmi Dental</h3>
+                        <span class="text-center d-block tools">(Bootstrap/SCSS)</span>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <section class="testimonials section-pad" id="testimonials">
+            <div class="custom-container-sm">
+                <div class="head-text text-center position-relative">
+                    <div class="slider-btn d-flex position-absolute bottom-0 end-0">
+                        <span class="prev-btn"><i class="bi bi-chevron-left"></i></span>
+                        <span class="next-btn"><i class="bi bi-chevron-right"></i></span>
+                    </div>
+                    <h2 class="text-center">Testimonials</h2>
+                    <span class="subtitle">What Our Clients Are Saying</span>
+                </div>
+                <div class="testi-slider d-flex">
+                    <div class="slider-card d-flex flex-column">
+                        <div class="user-img-wrapper d-flex align-items-center gap-3">
+                            <figure class="user-img">
+                                <img src="assets/images/user.webp" alt="user-img">
+                            </figure>
+                            <div class="user-name d-flex flex-column gap-1">
+                                <h3>Scarlett Johnson</h3>
+                                <span class="user-detail">Marketing Manager</span>
+                            </div>
+                        </div>
+                        <p class="comment">Manish exceeded our expectations with his creativity and attention to detail. The project was delivered on time and perfectly captured our vision. Highly recommend his services!</p>
+                        <div class="star-wrapper d-flex gap-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                    <div class="slider-card d-flex flex-column">
+                        <div class="user-img-wrapper d-flex align-items-center gap-3">
+                            <figure class="user-img">
+                                <img src="assets/images/user.jfif" alt="user-img">
+                            </figure>
+                            <div class="user-name d-flex flex-column gap-1">
+                                <h3>Manisha Sharma</h3>
+                                <span class="user-detail">Creative Director</span>
+                            </div>
+                        </div>
+                        <p class="comment">
+                            Exceptional service and creativity! Manish delivered a polished Software that perfectly matched our needs. We couldn't be happier with the outcome.
+                        </p>
+                        <div class="star-wrapper d-flex gap-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                    <div class="slider-card d-flex flex-column">
+                        <div class="user-img-wrapper d-flex align-items-center gap-3">
+                            <figure class="user-img">
+                                <img src="assets/images/user.jpg" alt="user-img">
+                            </figure>
+                            <div class="user-name d-flex flex-column gap-1">
+                                <h3>Harry Philip</h3>
+                                <span class="user-detail">Product Manager</span>
+                            </div>
+                        </div>
+                        <p class="comment">Manish's work is outstanding. He turned our ideas into a beautiful, functional Software. We are thrilled with the results and would definitely hire him again!
+                        </p>
+                        <div class="star-wrapper d-flex gap-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <section class="contact section-pad" id="contact">
+            <div class="custom-container-sm">
+                <div class="head-text text-center">
+                    <h2>Hire me</h2>
+                    <span class="subtitle">Get Connected Now</span>
+                </div>
+                <form action="submit">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="name d-flex flex-column">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John doe">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="email d-flex flex-column">
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" placeholder="Example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="message d-flex flex-column">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" placeholder="Say something..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-btn d-block submit-btn">Submit</a>
+                </form>
+                <div class="row contact-info-wrapper">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="info-card">
+                            <a href="mailto:timilsinamanish3@gmail.com" class="d-flex">
+                                <span class="info-icon position-relative"><i class="bi bi-envelope"></i></span>
+                                <div class="contact-detail">
+                                    <h3>Email</h3>
+                                    <p>timilsinamanish3@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="info-card">
+                            <a href="tel: +9779840590906" class="d-flex">
+                                <span class="info-icon position-relative"><i class="bi bi-telephone"></i></span>
+                                <div class="contact-detail">
+                                    <h3>Phone</h3>
+                                    <p>+9779840590906</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="info-card">
+                            <a href="https://www.google.com/maps/search/?api=1&query=27.721042,85.271010" class="d-flex">
+                                <span class="info-icon position-relative"><i class="bi bi-geo-alt-fill"></i></span>
+                                <div class="contact-detail">
+                                    <h3>Address</h3>
+                                    <p>Jarankhu, Kathmandu</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-wrapper">
+            <div class="custom-container">
+                <div class="row footer-bottom">
+                    <div class="col-lg-3">
+                        <a href="index.html" class="logo d-flex justify-content-center justify-content-lg-start">MT</a>
+                    </div>
+                    <div class="col-lg-9">
+                        <div
+                            class="copyright-text text-center d-flex align-items-center justify-content-center justify-content-lg-end h-100">
+                            <p>MT © 2024. All Right Reserved, Designed By Manish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="assets/js/custom.js"></script>
+        </body>
+        </html>
